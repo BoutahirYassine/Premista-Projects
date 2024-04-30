@@ -1,0 +1,8 @@
+services:
+  datasciences:
+    image: premista-tresorerie-api
+    ports:
+      - "8000:8000"
+    environment:
+      - CONNECTION_MONGO_ENV=mongodb://datascience:m256QbSt2QsAt2EL46hp@host.docker.internal:27017
+      - ENV=prod
